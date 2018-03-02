@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/productInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="94dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Type your product input"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/productInput"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="80dp"
+        android:background="@color/abc"
+        android:onClick="addButtonClicked"
+        android:text="ADD"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/add"
+        android:layout_alignBottom="@+id/add"
+        android:layout_alignEnd="@+id/items"
+        android:background="@color/abc"
+        android:onClick="deleteButtonClicked"
+        android:text="DELETE"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/items"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/add"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Items at your shop!"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:fontFamily="serif"
+        android:text="You Have Logged In As An Admin"
+        android:textColor="@android:color/black"
+        android:textSize="18dp" />
+</RelativeLayout>

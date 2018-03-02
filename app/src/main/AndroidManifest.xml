@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gosmart">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".LinkBigBazaar"/>
+        <activity android:name=".LinkRelianceFresh"/>
+        <activity android:name=".LinkVishal"/>
+        <activity android:name=".LinkmBazaar"/>
+        <activity android:name=".LinkPatanjali"/>
+        <activity android:name=".Availability"/>
+        <activity android:name=".startShopping"/>
+        <activity android:name=".FindingProduct"/>
+        <activity android:name=".ProductAvailabilityDetails"/>
+    </application>
+
+</manifest>

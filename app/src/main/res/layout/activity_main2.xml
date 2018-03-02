@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.gosmart.Main2Activity"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/showUser"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/profile_image"
+        android:layout_marginTop="14dp"
+        android:layout_weight="0.15"
+        android:fontFamily="casual"
+        android:gravity="center_vertical|center|end"
+        android:text="UserName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="top|end"
+        android:layout_weight="0.15"
+        app:srcCompat="@drawable/photo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <ListView
+        android:id="@+id/shopList"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="10dp">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/availabilty"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/showUser"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp"
+        android:background="@color/abc"
+        android:elevation="1dp"
+        android:onClick="knowAvailability"
+        android:text="1. Know Availability"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/abc"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/showUser"
+        android:layout_marginTop="25dp"
+        android:background="@color/abc"
+        android:onClick="findProduct"
+        android:text="2. Locating Product"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/Shopping"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@color/abc"
+        android:onClick="startShopping"
+        android:text="3. Start Shopping"
+        android:textColor="@android:color/background_light" />
+
+</RelativeLayout>

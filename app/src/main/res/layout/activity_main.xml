@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image"
+    tools:context="com.example.gosmart.MainActivity">
+
+
+    <Button
+        android:id="@+id/logIn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/colorFocusedHighlight"
+        android:onClick="onClickLogIn"
+        android:paddingEnd="10dp"
+        android:text="Log In"
+        android:textColor="@android:color/background_light"
+        android:layout_marginBottom="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/iconImage" />
+
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/passwordInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:filterTouchesWhenObscured="true"
+        android:gravity="center_horizontal|fill_horizontal"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_dark"
+        android:textColorHighlight="@android:color/background_dark"
+        android:textColorHint="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/logIn"
+        android:layout_alignStart="@+id/nameInput"
+        android:layout_marginBottom="58dp"
+        android:ems="10"
+        android:gravity="center_horizontal|fill_horizontal"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/background_dark"
+        android:textColorHighlight="@android:color/background_dark"
+        android:textColorHint="@android:color/background_light" />
+
+    <ImageView
+        android:id="@+id/iconImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="43dp"
+        app:srcCompat="@drawable/icon"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
